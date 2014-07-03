@@ -1,0 +1,51 @@
+# ls aliases
+alias l='ls -1Fh'
+alias ll='ls -lFh'
+alias la='ls -aFh'
+alias lal='ls -laFh'
+alias lt='ls -laFhtr'
+
+# grep aliases
+alias gr='grep --color=always'
+
+# other aliases
+alias t='tree -FC'
+alias pcat='pygmentize'
+alias e='emacs'
+alias fn='find . -name'
+alias pg='ps aux | grep'
+
+# git aliases
+alias gs='git status'
+alias gss='git status -s'
+alias gb='git branch'
+alias gd='git diff --color'
+alias gl='git log --color'
+alias glo='git log --color --pretty=oneline'
+alias glf='git log --color --follow'
+alias glof='git log --color --pretty=oneline --follow'
+alias glg='git log --graph --color --abbrev-commit --pretty=oneline'
+alias gplr='git pull --rebase'
+alias gps='git push'
+alias gsu='git submodule update'
+alias gst='git stash'
+alias gstp='git stash pop'
+
+# python aliases
+alias p='python'
+
+# virtualenv aliases
+alias vba='. virtualenv/bin/activate'
+alias d='deactivate'
+
+# django aliases
+alias mpr='python manage.py runserver'
+alias mpt='python manage.py test'
+alias mps='python manage.py shell'
+
+# go aliases
+alias gopath='GOPATH=`pwd`'
+alias gob='go build'
+alias gog='go get'
+alias gof='go fmt'
+

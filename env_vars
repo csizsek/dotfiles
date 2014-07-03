@@ -1,0 +1,6 @@
+# color terminal
+export CLICOLOR=1
+
+# set default editor
+export EDITOR=vim
+
