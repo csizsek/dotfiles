@@ -1,3 +1,5 @@
+#! /bin/sh -e
+
 timestamp=`date +%s`
 backup_dir="$HOME/.dotfiles_backup_$timestamp"
 
