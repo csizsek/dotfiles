@@ -6,10 +6,7 @@
 # export environment variables in $HOME/.local_env_vars
 if [ -f $HOME/.local_env_vars ]
 then
-    while read line
-    do
-        export "$line"
-    done < $HOME/.local_env_vars
+    . $HOME/.local_env_vars
 fi
 
 # set PATH based on the lines in $HOME/.local_path
