@@ -15,6 +15,7 @@ alias e='emacs'
 alias fn='find . -name'
 alias pg='ps aux | grep'
 alias sr='ssh -lroot'
+alias rbp='. ~/.bash_profile'
 
 # git aliases
 alias gs='git status'

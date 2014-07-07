@@ -1,12 +1,25 @@
+# history settings
 . $HOME/dotfiles/history
-. $HOME/dotfiles/env_vars
-. $HOME/dotfiles/prompt
-. $HOME/dotfiles/aliases
 
-# export environment variables in $HOME/.local_env_vars
+# prompt settings
+. $HOME/dotfiles/prompt
+
+# global environment variables
+. $HOME/dotfiles/env_vars
+
+# local environment variables
 if [ -f $HOME/.local_env_vars ]
 then
     . $HOME/.local_env_vars
+fi
+
+# global aliases
+. $HOME/dotfiles/aliases
+
+# local aliases
+if [ -f $HOME/.local_aliases ]
+then
+    . $HOME/.local_aliases
 fi
 
 # set PATH based on the lines in $HOME/.local_path
