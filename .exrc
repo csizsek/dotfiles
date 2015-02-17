@@ -14,4 +14,6 @@ set hlsearch
 set ignorecase
 set wrap wrapmargin=0
 set laststatus=2
+set nocompatible
+set backspace=indent,eol,start
 

@@ -33,6 +33,7 @@ alias gps='git push'
 alias gsu='git submodule update'
 alias gst='git stash'
 alias gstp='git stash pop'
+alias gco='git checkout'
 
 # python aliases
 alias p='python'
