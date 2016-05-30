@@ -22,6 +22,15 @@ then
     . $HOME/.local_aliases
 fi
 
+# global functions
+. $HOME/dotfiles/functions
+
+# local functions
+if [ -f $HOME/.local_functions ]
+then
+    . $HOME/.local_functions
+fi
+
 # set PATH based on the lines in $HOME/.local_path
 # (you can reference previously exported env vars from the above file)
 if [ -f $HOME/.local_path ]
