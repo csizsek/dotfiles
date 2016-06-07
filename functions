@@ -3,3 +3,8 @@ function csview {
 }
 export -f csview
 
+function tsview {
+    cat $1 | sed 's/,,/, ,/g;s/,,/, ,/g' | column -t | less -#2 -N -S
+}
+export -f tsview
+
