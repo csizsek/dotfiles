@@ -8,3 +8,8 @@ function tsview {
 }
 export -f tsview
 
+function psview {
+    cat $1 | sed 's/,,/, ,/g;s/,,/, ,/g' | column -s'|' -t | less -#2 -N -S
+}
+export -f psview
+

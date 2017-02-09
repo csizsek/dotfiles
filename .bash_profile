@@ -31,6 +31,16 @@ then
     . $HOME/.local_functions
 fi
 
+# global commands
+. $HOME/dotfiles/commands
+
+# local commands
+if [ -f $HOME/.local_commands ]
+then
+    . $HOME/.local_commands
+fi
+
+
 # set PATH based on the lines in $HOME/.local_path
 # (you can reference previously exported env vars from the above file)
 if [ -f $HOME/.local_path ]
