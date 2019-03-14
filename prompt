@@ -7,19 +7,11 @@ HC=33
 PC=32
 
 # all red for root
-if [ $USER == "root" ]
+if [ "${USER}" == "root" ]
 then
     UC=31
     HC=31
     PC=31
-fi
-
-# all blue for vagrant
-if [ $USER == "vagrant" ]
-then
-    UC=34
-    HC=34
-    PC=34
 fi
 
 export PS1='\[\033[00;37m\][\[\033[00;${UC}m\]\u\[\033[00;37m\]@\[\033[00;${HC}m\]\h\[\033[00;37m\]/\[\033[00;${PC}m\]\w\[\033[00;37m\]]> '
