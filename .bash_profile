@@ -1,3 +1,7 @@
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
+
 # history settings
 . "${HOME}"/dotfiles/history
 
