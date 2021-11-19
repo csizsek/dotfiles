@@ -9,7 +9,7 @@ alias lt='ls -laFhtr'
 alias gr='grep --color=always'
 
 # other aliases
-alias t='tree -FC'
+alias t='tree -FC -L 2'
 alias pcat='pygmentize'
 alias e='emacs'
 alias fn='find . -name'
