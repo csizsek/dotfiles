@@ -1,7 +1,3 @@
-if [ -f ~/.bashrc ]; then
-  . ~/.bashrc
-fi
-
 # history settings
 . "${HOME}"/dotfiles/history
 
@@ -44,7 +40,6 @@ then
     . "${HOME}"/.local_commands
 fi
 
-
 # set PATH based on the lines in $HOME/.local_path
 # (you can reference previously exported env vars from the above file)
 if [ -f "${HOME}"/.local_path ]
@@ -55,6 +50,3 @@ then
     done < "${HOME}"/.local_path
 fi
 export PATH
-
-# load rvm if present
-[ -f "${HOME}"/.rvm/scripts/rvm ] && . "${HOME}"/.rvm/scripts/rvm

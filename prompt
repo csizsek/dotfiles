@@ -7,13 +7,12 @@ HC=33
 PC=32
 
 # all red for root
-if [ "${USER}" == "root" ]
+if [ "${USER}" = "root" ]
 then
     UC=31
     HC=31
     PC=31
 fi
 
-export PS1='\[\033[00;37m\][\[\033[00;${UC}m\]\u\[\033[00;37m\]@\[\033[00;${HC}m\]zumwalt\[\033[00;37m\]/\[\033[00;${PC}m\]\w\[\033[00;37m\]]> '
+export PS1='%F{blue}%n%F{white}@%F{yellow}nostromo%F{white}:%F{green}%~%F{white} '
 export PS2='> '
-

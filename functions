@@ -1,15 +1,4 @@
-function csview {
-    cat $1 | sed 's/,,/, ,/g;s/,,/, ,/g' | column -s, -t | less -#2 -N -S
-}
-export -f csview
-
-function tsview {
-    cat $1 | sed 's/,,/, ,/g;s/,,/, ,/g' | column -t | less -#2 -N -S
-}
-export -f tsview
-
-function psview {
-    cat $1 | sed 's/,,/, ,/g;s/,,/, ,/g' | column -s'|' -t | less -#2 -N -S
-}
-export -f psview
-
+#function csview {
+#    cat $1 | sed 's/,,/, ,/g;s/,,/, ,/g' | column -s, -t | less -#2 -N -S
+#}
+#export -f csview

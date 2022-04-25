@@ -1,7 +1,6 @@
-shopt -s histappend
+setopt APPEND_HISTORY
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 export HISTCONTROL=ignoreboth
 export HISTSIZE=
 export HISTFILESIZE=
 export HISTTIMEFORMAT='%F %T '
-

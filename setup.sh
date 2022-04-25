@@ -6,7 +6,7 @@ backup_dir="$HOME/.dotfiles_backup_$timestamp"
 echo "creating backup directory: $backup_dir"
 mkdir $backup_dir
 
-files=".exrc .emacs .bash_profile"
+files=".exrc .zshrc"
 for file in $files
 do
     old_file_path="$HOME/$file"
@@ -21,4 +21,3 @@ do
     echo "linking new file: $old_file_path"
     ln -s $new_file_path $old_file_path
 done
-

@@ -11,11 +11,10 @@ alias gr='grep --color=always'
 # other aliases
 alias t='tree -FC -L 2'
 alias pcat='pygmentize'
-alias e='emacs'
 alias fn='find . -name'
 alias pg='ps aux | grep'
 alias sr='ssh -lroot'
-alias rbp='. ~/.bash_profile'
+alias rzp='. ~/.zprofile'
 
 # git aliases
 alias gs='git status'
@@ -34,22 +33,3 @@ alias gsu='git submodule update'
 alias gst='git stash'
 alias gstp='git stash pop'
 alias gco='git checkout'
-
-# python aliases
-alias p='python'
-
-# virtualenv aliases
-alias vba='. virtualenv/bin/activate'
-alias d='deactivate'
-
-# django aliases
-alias mpr='python manage.py runserver'
-alias mpt='python manage.py test'
-alias mps='python manage.py shell'
-
-# go aliases
-alias gopath='GOPATH=`pwd`'
-alias gob='go build'
-alias gog='go get'
-alias gof='go fmt'
-
