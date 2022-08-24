@@ -14,7 +14,7 @@ alias pcat='pygmentize'
 alias fn='find . -name'
 alias pg='ps aux | grep'
 alias sr='ssh -lroot'
-alias rzp='. ~/.zprofile'
+alias rzp='. ~/.zshrc'
 
 # git aliases
 alias gs='git status'
