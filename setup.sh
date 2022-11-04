@@ -21,3 +21,4 @@ do
     echo "linking new file: $old_file_path"
     ln -s $new_file_path $old_file_path
 done
+
